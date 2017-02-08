@@ -8,9 +8,13 @@
   justify-content: space-between;
 }
 .perfil{
-  background-color: #4C4C4C;
-  max-height: 70vh;
-  margin-right: 3vw
+  max-height: 90vh;
+  margin-right: 3vw;
+  display: flex;
+  flex-direction: column;
+}
+.persona{
+  display: flex;
 }
 .contacto{
   padding: 10px 20px;
@@ -20,6 +24,7 @@
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
+  align-items: stretch;
 }
 .contacto:hover{
   background-color: red;
@@ -32,6 +37,12 @@
   flex-direction: column;
   align-items: center;
   line-height: 2;
+}
+.cv{
+  background-color: #ffffff;
+  padding: 3vw;
+  display: flex;
+  flex-direction: column;
 }
 .who{
   display: flex;
@@ -51,10 +62,107 @@ h2{
 }
 .datos{
   display: flex;
-  justify-content: space-between;
-  padding: 5vw;
+  justify-content: space-around;
+}
+.datos > div{
+  display: flex;
+}
+.negritas, .datos2{
+  margin-top: 3vh;
+  padding: 2vw;
+  border: 1px solid #B3B3B3;
+  border-bottom: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .datos2{
-  background-color: gray;
+  background-color: #eee;
 }
+.profecional{
+  display: flex;
+  flex-direction: column;
+}
+.profecional img{
+  align-self: flex-start;
+}
+.design{
+  display: flex;
+  justify-content: space-between;
+}
+.titulo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(90deg);
+  margin-top: 8vh;
+
+}
+.skills01,.skills02,.skills03{
+  display: flex;
+  flex-direction: column;
+  margin-top: 5vh;
+}
+.progress{
+  width: 50vw;
+  height: 2vh;
+  border-radius: 5px;
+  background-color: #eee;
+}
+.color01{
+  width: 1vw;
+  height: 2vh;
+  border-radius: 5px;
+  background-color: #B3B3B3;
+}
+
+.color02{
+  width: 1vw;
+  height: 2vh;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.color03{
+  width: 1vw;
+  height: 2vh;
+  border-radius: 5px;
+  background-color: black;
+}
+
+@media (max-width: 900px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+  .persona{
+    display: flex;
+    width: 100%;
+  }
+  .persona img{
+    width: 100%;
+  }
+  .contacto{
+    display: flex;
+    font-size: 12px;
+  }
+  .datos{
+    flex-direction: column;
+  }
+  .social{
+    padding: 50px 0;
+  }
+  .datos > div{
+    display: flex;
+  }
+  .date{
+    width: 70%;
+  }
+}
+
 
